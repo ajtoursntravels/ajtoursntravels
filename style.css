@@ -9,12 +9,33 @@ body {
     line-height: 1.6;
 }
 
-header {
+.main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background: #0b3d91;
-    color: white;
-    padding: 15px 0;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    z-index: 1000;
 }
+
+.main-header .logo img {
+    height: 50px;
+}
+
+.main-header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+.main-header nav a:hover {
+    color: gold;
+}
+
 
 nav {
     background: #082b6f;
@@ -197,4 +218,8 @@ footer {
     color: gold;
     font-style: italic;
     margin-top: 15px;
+}
+
+body {
+    padding-top: 70px;
 }
