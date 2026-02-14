@@ -391,28 +391,6 @@ footer {
     border-top: 1px solid #222;
 }
 
-/* ===============================
-   FLOATING WHATSAPP
-================================= */
-
-.whatsapp {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 60px;
-    height: 60px;
-    background: #25D366;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.7);
-    z-index: 1000;
-}
-
-.whatsapp img {
-    width: 35px;
-}
 
 /* ===============================
    RESPONSIVE
@@ -439,4 +417,30 @@ footer {
     .hero p {
         font-size: 18px;
     }
+}
+/* ===============================
+   FLOATING WHATSAPP
+================================= */
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+    z-index: 9999;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
 }
