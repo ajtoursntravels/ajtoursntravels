@@ -466,3 +466,135 @@ nav .active {
         grid-template-columns: 1fr;
     }
 }
+/* CONTACT PAGE */
+
+.contact-section {
+    padding: 120px 60px 80px;
+    background: #0a0a0a;
+    color: #fff;
+}
+
+.contact-section h1 {
+    text-align: center;
+    font-size: 40px;
+    color: gold;
+    margin-bottom: 50px;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+/* LEFT SIDE */
+
+.contact-info h2 {
+    color: gold;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    color: #bbb;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #111;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #222;
+}
+
+.info-card i {
+    font-size: 22px;
+    color: gold;
+}
+
+.whatsapp {
+    border-color: #25D366;
+}
+
+.follow-title {
+    margin-top: 30px;
+    color: gold;
+}
+
+.social-icons a {
+    margin-right: 15px;
+    font-size: 20px;
+    color: gold;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+/* FORM */
+
+.contact-form {
+    background: #111;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #222;
+}
+
+.contact-form h2 {
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background: #0a0a0a;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 14px;
+    background: gold;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #c9a227;
+}
+
+/* FLOAT WHATSAPP */
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    z-index: 1000;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
