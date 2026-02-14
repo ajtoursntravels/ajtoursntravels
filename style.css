@@ -90,6 +90,15 @@ nav a:hover {
     letter-spacing: 1px;
 }
 
+.section-subtitle {
+    text-align: center;
+    color: #c9a227; /* luxury soft gold */
+    font-size: 16px;
+    margin-top: -30px;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+
 /* SECTIONS */
 .services-section,
 .experience-section {
