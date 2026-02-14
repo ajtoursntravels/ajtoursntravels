@@ -1,3 +1,7 @@
+/* ===============================
+   GLOBAL STYLES
+================================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,9 +12,19 @@
 body {
     background: #0a0a0a;
     color: #e5e5e5;
+    scroll-behavior: smooth;
 }
 
-/* HEADER */
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+/* ===============================
+   HEADER
+================================= */
+
 .main-header {
     position: fixed;
     top: 0;
@@ -33,14 +47,18 @@ nav a {
     text-decoration: none;
     margin-left: 35px;
     font-weight: 500;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
-nav a:hover {
+nav a:hover,
+nav .active {
     color: #d4af37;
 }
 
-/* HERO */
+/* ===============================
+   HERO SECTION
+================================= */
+
 .hero {
     height: 100vh;
     background: url('https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?auto=compress&cs=tinysrgb&w=1600') no-repeat center center/cover;
@@ -67,11 +85,13 @@ nav a:hover {
 .hero-logo {
     width: 130px;
     margin-bottom: 25px;
+    border-radius: 50%;
+    border: 3px solid #d4af37;
 }
 
 .hero h1 {
     font-size: 56px;
-    color: white;
+    color: #fff;
     letter-spacing: 3px;
 }
 
@@ -81,32 +101,36 @@ nav a:hover {
     margin-top: 10px;
 }
 
-/* SECTION TITLES */
+/* ===============================
+   SECTION TITLES
+================================= */
+
 .section-title {
     text-align: center;
     font-size: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
     color: #d4af37;
     letter-spacing: 1px;
 }
 
 .section-subtitle {
     text-align: center;
-    color: #c9a227; /* luxury soft gold */
+    color: #c9a227;
     font-size: 16px;
-    margin-top: -30px;
     margin-bottom: 50px;
     letter-spacing: 1px;
 }
 
-/* SECTIONS */
+/* ===============================
+   SERVICES & EXPERIENCE
+================================= */
+
 .services-section,
 .experience-section {
     padding: 120px 20px;
     background: #0a0a0a;
 }
 
-/* GRID */
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -115,7 +139,6 @@ nav a:hover {
     margin: auto;
 }
 
-/* CARD */
 .service-card {
     background: #111;
     border-radius: 18px;
@@ -126,7 +149,7 @@ nav a:hover {
 }
 
 .service-card:hover {
-    transform: translateY(-12px);
+    transform: translateY(-10px);
     border: 1px solid #d4af37;
 }
 
@@ -149,9 +172,217 @@ nav a:hover {
 
 .card-content p {
     color: #aaa;
+    font-size: 15px;
 }
 
-/* FOOTER */
+/* ===============================
+   ABOUT PAGE
+================================= */
+
+.about-hero {
+    padding-top: 120px;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 48px;
+    color: #d4af37;
+}
+
+.about-logo {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.about-logo img {
+    width: 180px;
+    border-radius: 50%;
+    border: 4px solid #d4af37;
+}
+
+.about-content p {
+    max-width: 900px;
+    margin: auto;
+    color: #bbb;
+    line-height: 1.8;
+    font-size: 17px;
+    text-align: center;
+}
+
+.why-modern {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.why-box {
+    display: flex;
+    gap: 20px;
+    background: #111;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #222;
+    transition: 0.3s;
+}
+
+.why-box:hover {
+    border-color: #d4af37;
+    transform: translateY(-5px);
+}
+
+.why-icon {
+    font-size: 30px;
+    color: #d4af37;
+}
+
+.why-box h3 {
+    color: #d4af37;
+    margin-bottom: 8px;
+}
+
+.why-box p {
+    color: #bbb;
+    font-size: 15px;
+}
+
+/* ===============================
+   DESTINATIONS PAGE
+================================= */
+
+.dest-section {
+    padding: 120px 60px 80px;
+    text-align: center;
+}
+
+.dest-section h1 {
+    color: #d4af37;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.dest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+}
+
+.dest-card {
+    background: #111;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #222;
+    transition: 0.4s;
+}
+
+.dest-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.dest-card h3 {
+    padding: 18px;
+    color: #d4af37;
+}
+
+.dest-card:hover {
+    transform: translateY(-8px);
+    border-color: #d4af37;
+}
+
+/* ===============================
+   CONTACT PAGE
+================================= */
+
+.contact-section {
+    padding: 120px 60px 80px;
+}
+
+.contact-section h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #d4af37;
+    margin-bottom: 50px;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact-info p {
+    color: #bbb;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #111;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #222;
+}
+
+.info-card i {
+    font-size: 20px;
+    color: #d4af37;
+}
+
+.social-icons a {
+    margin-right: 15px;
+    font-size: 20px;
+    color: #d4af37;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+.contact-form {
+    background: #111;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #222;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background: #0a0a0a;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 14px;
+    background: #d4af37;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #c9a227;
+}
+
+/* ===============================
+   FOOTER
+================================= */
+
 footer {
     background: #111;
     color: #aaa;
@@ -160,7 +391,10 @@ footer {
     border-top: 1px solid #222;
 }
 
-/* WHATSAPP */
+/* ===============================
+   FLOATING WHATSAPP
+================================= */
+
 .whatsapp {
     position: fixed;
     bottom: 30px;
@@ -179,428 +413,30 @@ footer {
 .whatsapp img {
     width: 35px;
 }
-/* GLOBAL */
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #000;
-    color: #fff;
-}
 
-.container {
-    width: 85%;
-    margin: auto;
-    padding: 60px 0;
-}
+/* ===============================
+   RESPONSIVE
+================================= */
 
-/* HEADER */
-.header {
-    position: fixed;
-    width: 100%;
-    background: #000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 60px;
-    border-bottom: 1px solid #222;
-    z-index: 1000;
-}
+@media (max-width: 900px) {
 
-.logo img {
-    width: 55px;
-}
+    .main-header {
+        padding: 15px 25px;
+    }
 
-nav a {
-    color: white;
-    margin-left: 25px;
-    text-decoration: none;
-    font-weight: 500;
-}
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
 
-nav a:hover,
-nav .active {
-    color: gold;
-}
-
-/* HERO */
-.about-hero {
-    padding-top: 120px;
-    text-align: center;
-}
-
-.about-hero h1 {
-    font-size: 48px;
-    color: gold;
-}
-
-.about-hero p {
-    font-size: 20px;
-    color: #ccc;
-}
-
-/* ABOUT CONTENT */
-.about-logo {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.about-logo img {
-    width: 180px;
-    border-radius: 50%;
-    border: 4px solid gold;
-}
-
-.about-content h2 {
-    text-align: center;
-    color: gold;
-    margin-bottom: 20px;
-}
-
-.about-content p {
-    text-align: center;
-    max-width: 900px;
-    margin: auto;
-    color: #bbb;
-    line-height: 1.8;
-    font-size: 17px;
-}
-
-/* SECTION TITLE */
-.section-title {
-    text-align: center;
-    color: gold;
-    font-size: 36px;
-    margin-bottom: 40px;
-}
-
-/* WHY SECTION */
-.why-modern {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-}
-
-.why-box {
-    display: flex;
-    gap: 20px;
-    background: #111;
-    padding: 25px;
-    border-radius: 12px;
-    border: 1px solid #222;
-    transition: 0.3s;
-}
-
-.why-box:hover {
-    border-color: gold;
-    transform: translateY(-5px);
-}
-
-.why-icon {
-    font-size: 32px;
-    color: gold;
-}
-
-.why-box h3 {
-    color: gold;
-    margin-bottom: 8px;
-}
-
-.why-box p {
-    color: #bbb;
-    font-size: 15px;
-    line-height: 1.6;
-}
-
-/* MISSION */
-.mission-text {
-    text-align: center;
-    max-width: 800px;
-    margin: auto;
-    color: #bbb;
-    font-size: 17px;
-    line-height: 1.8;
-}
-
-/* FOOTER */
-.footer {
-    background: #111;
-    text-align: center;
-    padding: 30px;
-    border-top: 1px solid #222;
-}
-
-/* WHATSAPP */
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: gold;
-    color: black;
-    padding: 15px;
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
     .why-modern {
         grid-template-columns: 1fr;
     }
 
-    .about-hero h1 {
-        font-size: 32px;
+    .hero h1 {
+        font-size: 36px;
     }
-}
-/* DESTINATION HERO */
-.dest-hero {
-    padding-top: 120px;
-    text-align: center;
-}
 
-.dest-hero h1 {
-    font-size: 48px;
-    color: gold;
-}
-
-.dest-hero p {
-    color: #ccc;
-    font-size: 18px;
-}
-
-/* DESTINATION GRID */
-.dest-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-.dest-card {
-    background: #111;
-    border-radius: 15px;
-    overflow: hidden;
-    border: 1px solid #222;
-    transition: 0.4s;
-}
-
-.dest-card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    transition: 0.4s;
-}
-
-.dest-card h3 {
-    text-align: center;
-    padding: 20px;
-    color: gold;
-}
-
-.dest-card:hover {
-    transform: translateY(-8px);
-    border-color: gold;
-}
-
-.dest-card:hover img {
-    transform: scale(1.05);
-}
-
-/* RESPONSIVE */
-@media (max-width: 992px) {
-    .dest-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .dest-grid {
-        grid-template-columns: 1fr;
-    }
-}
-/* DESTINATIONS PAGE */
-
-.dest-section {
-    padding: 120px 60px 80px;
-    background: #0a0a0a;
-    text-align: center;
-}
-
-.dest-section h1 {
-    color: gold;
-    font-size: 40px;
-    margin-bottom: 50px;
-}
-
-.dest-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 35px;
-}
-
-.dest-card {
-    background: #111;
-    border-radius: 12px;
-    overflow: hidden;
-    transition: 0.4s;
-    border: 1px solid #222;
-}
-
-.dest-card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    display: block;
-}
-
-.dest-card h3 {
-    padding: 18px;
-    color: gold;
-    font-size: 20px;
-}
-
-.dest-card:hover {
-    transform: translateY(-8px);
-    border-color: gold;
-}
-
-/* Responsive */
-@media (max-width: 992px) {
-    .dest-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .dest-grid {
-        grid-template-columns: 1fr;
-    }
-}
-/* CONTACT PAGE */
-
-.contact-section {
-    padding: 120px 60px 80px;
-    background: #0a0a0a;
-    color: #fff;
-}
-
-.contact-section h1 {
-    text-align: center;
-    font-size: 40px;
-    color: gold;
-    margin-bottom: 50px;
-}
-
-.contact-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-}
-
-/* LEFT SIDE */
-
-.contact-info h2 {
-    color: gold;
-    margin-bottom: 15px;
-}
-
-.contact-info p {
-    color: #bbb;
-    margin-bottom: 30px;
-    line-height: 1.6;
-}
-
-.info-card {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    background: #111;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    border: 1px solid #222;
-}
-
-.info-card i {
-    font-size: 22px;
-    color: gold;
-}
-
-
-.follow-title {
-    margin-top: 30px;
-    color: gold;
-}
-
-.social-icons a {
-    margin-right: 15px;
-    font-size: 20px;
-    color: gold;
-    transition: 0.3s;
-}
-
-.social-icons a:hover {
-    color: #fff;
-}
-
-/* FORM */
-
-.contact-form {
-    background: #111;
-    padding: 30px;
-    border-radius: 12px;
-    border: 1px solid #222;
-}
-
-.contact-form h2 {
-    color: gold;
-    margin-bottom: 20px;
-}
-
-.contact-form input,
-.contact-form select,
-.contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    background: #0a0a0a;
-    border: 1px solid #333;
-    color: #fff;
-    border-radius: 6px;
-}
-
-.contact-form button {
-    width: 100%;
-    padding: 14px;
-    background: gold;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 6px;
-    transition: 0.3s;
-}
-
-.contact-form button:hover {
-    background: #c9a227;
-}
-
-/* FLOAT WHATSAPP */
-
-.whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: #fff;
-    padding: 15px;
-    border-radius: 50%;
-    font-size: 20px;
-    z-index: 1000;
-}
-
-/* RESPONSIVE */
-
-@media (max-width: 900px) {
-    .contact-container {
-        grid-template-columns: 1fr;
+    .hero p {
+        font-size: 18px;
     }
 }
