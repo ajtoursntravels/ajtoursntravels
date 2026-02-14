@@ -343,3 +343,68 @@ nav .active {
         font-size: 32px;
     }
 }
+/* DESTINATION HERO */
+.dest-hero {
+    padding-top: 120px;
+    text-align: center;
+}
+
+.dest-hero h1 {
+    font-size: 48px;
+    color: gold;
+}
+
+.dest-hero p {
+    color: #ccc;
+    font-size: 18px;
+}
+
+/* DESTINATION GRID */
+.dest-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.dest-card {
+    background: #111;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #222;
+    transition: 0.4s;
+}
+
+.dest-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.dest-card h3 {
+    text-align: center;
+    padding: 20px;
+    color: gold;
+}
+
+.dest-card:hover {
+    transform: translateY(-8px);
+    border-color: gold;
+}
+
+.dest-card:hover img {
+    transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .dest-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .dest-grid {
+        grid-template-columns: 1fr;
+    }
+}
