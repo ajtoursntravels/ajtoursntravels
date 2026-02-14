@@ -408,3 +408,61 @@ nav .active {
         grid-template-columns: 1fr;
     }
 }
+/* DESTINATIONS PAGE */
+
+.dest-section {
+    padding: 120px 60px 80px;
+    background: #0a0a0a;
+    text-align: center;
+}
+
+.dest-section h1 {
+    color: gold;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.dest-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.dest-card {
+    background: #111;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.4s;
+    border: 1px solid #222;
+}
+
+.dest-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.dest-card h3 {
+    padding: 18px;
+    color: gold;
+    font-size: 20px;
+}
+
+.dest-card:hover {
+    transform: translateY(-8px);
+    border-color: gold;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .dest-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .dest-grid {
+        grid-template-columns: 1fr;
+    }
+}
