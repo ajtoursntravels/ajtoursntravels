@@ -61,7 +61,7 @@ nav .active {
 
 .hero {
     height: 100vh;
-    background: url('https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?auto=compress&cs=tinysrgb&w=1600') no-repeat center center/cover;
+    background: url('https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=1600') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,7 +74,10 @@ nav .active {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.75);
+    background: linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.45)
+    );
 }
 
 .hero-content {
