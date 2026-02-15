@@ -61,7 +61,9 @@ nav .active {
 
 .hero {
     height: 100vh;
-    background: url('https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=1600') no-repeat center center/cover;
+    .hero {
+    height: 100vh;
+    background: url('https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=1600') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,11 +88,12 @@ nav .active {
 }
 
 .hero-logo {
-    width: 130px;
-    margin-bottom: 25px;
+    width: 180px;
+    margin-bottom: 30px;
     border-radius: 50%;
     border: 3px solid #d4af37;
 }
+
 
 .hero h1 {
     font-size: 56px;
