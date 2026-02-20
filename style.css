@@ -341,14 +341,14 @@ nav .active {
 }
 
 .social-icons a {
+    font-size: 22px;
+    color: white;
     margin-right: 15px;
-    font-size: 20px;
-    color: #d4af37;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .social-icons a:hover {
-    color: #fff;
+    color: gold;
 }
 
 .contact-form {
