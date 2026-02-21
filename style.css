@@ -341,16 +341,24 @@ nav .active {
 }
 
 .social-icons a {
-    font-size: 22px;
+    font-size: 18px;
     color: white;
-    margin-right: 15px;
+    margin-right: 12px;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #1a1a1a;
     transition: 0.3s ease;
 }
 
 .social-icons a:hover {
-    color: gold;
+    background: #d4af37;
+    color: black;
+    transform: scale(1.1);
 }
-
 .contact-form {
     background: #111;
     padding: 30px;
