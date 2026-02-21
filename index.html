@@ -37,6 +37,10 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/7a4b62b0a4.js" crossorigin="anonymous"></script>
 
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#d4af37">
+
 </head>
 
 <body>
@@ -65,7 +69,6 @@
 
 <section class="services-section">
     <h2 class="section-title">Our Services</h2>
-
     <div class="card-grid">
 
         <div class="service-card">
@@ -129,7 +132,6 @@
     </div>
 </section>
 
-
 <!-- FOOTER -->
 <footer>
     <p>📍 Gajuwaka, Visakhapatnam</p>
@@ -157,6 +159,19 @@
     "addressRegion": "Andhra Pradesh",
     "addressCountry": "IN"
   }
+}
+</script>
+
+<!-- ✅ Service Worker (Correct Placement) -->
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js")
+    .then(function () {
+      console.log("Service Worker Registered");
+    })
+    .catch(function (error) {
+      console.log("Service Worker Registration Failed:", error);
+    });
 }
 </script>
 
